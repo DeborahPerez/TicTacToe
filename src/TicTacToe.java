@@ -1,4 +1,15 @@
-
+/////////////////////////////////////////////////////////////////////////////
+//   USAGE:
+//       java 1.8 TicTacToe.java
+//   DESCRIPTION:
+//       A mini game of tic tac toe in java where there are two players
+//       that can mark an "X" or a "Y" to get 3 of their mark in a row,
+//		 a column, or diagonally. 
+//---------------------------------------------------------------------------
+//   CREATED BY: Deborah Perez
+//   VERSION:    20180503
+/////////////////////////////////////////////////////////////////////////////
+//File TicTacToe.java 
 
 import java.util.Scanner;
 
@@ -7,7 +18,7 @@ public class TicTacToe {
 	public static void main(String[] args) {
 		playTicTacToe();
 	}
-// -playTicTacToe--------------------------------------------------------------
+// -playTicTacToe------------------------------------------------------------
 	private static void playTicTacToe() {
 		String[][] board = {
 				{"[ ]", "[ ]", "[ ]"},
@@ -47,7 +58,7 @@ public class TicTacToe {
 		System.out.println("**********GAME  OVER**********");
 
 	}			
-// ------------------------------------------------------------------------
+// -------------------------------------------------------------------------
 // -isAWinner checks if the player has won based on it's pattern------------
 	private static boolean isAWinner(String[][] board, String mark) {
 		String trueMark = "[" + mark + "]";
